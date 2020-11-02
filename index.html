@@ -4,7 +4,9 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <script src='jquery-3.5.1.min.js'></script>
+   
+    <script src="./js/extra.js"></script>
+
 
     <script src="jquery-3.5.1.min.js"></script>
   
@@ -12,6 +14,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/extra.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.0/css/all.css" />
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&display=swap" rel="stylesheet">
 
     <title>Alencar Segundo Advocacia</title>
@@ -19,12 +23,12 @@
   <body>
     <!-- botão flutuante -->
     <div class="up-to-page">
-      <a href="" class="">
-        <img src="./images/arrow-up-white.svg" alt="arrow-up">
+      <a href="#nav" class="">
+        <i class="fas fa-chevron-up"></i>
       </a>
     </div>
     <!-- começo do cabeçalho-->
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav id="nav" class="navbar navbar-expand-lg navbar-light">
      
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -45,7 +49,7 @@
             <a class="nav-link text-primary" href="#lj">Links <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item active">
-           <a class="nav-link text-primary" href="#loc">Localizção <span class="sr-only">(current)</span></a>
+           <a class="nav-link text-primary" href="#loc">Localização <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item active">
             <a class="nav-link text-primary" href="#cont">Contato <span class="sr-only">(current)</span></a>
@@ -64,7 +68,7 @@
     </div>
     <!--banner-fim-->
     <!--O escritorio-início-->
-    <section class="esc">
+    <section class="esc" data-anime="top-bottom">
       <h2 class="background double text-uppercase"><span><a name='esc'>O Escritório</a></span></h2>
       <div class="container">
         <div class="row">
@@ -121,9 +125,9 @@
     </section>
     <!--areas-fim-->
 
-    <!--Equipe-começo
+    <!--Equipe-começo -->
     <section>
-      <h2 class="background double text-uppercase"><span><a name='cli'>Vlientes</a></span></h2>
+      <h2 class="background double text-uppercase"><span><a name='cli'>Clientes</a></span></h2>
       <div class="container-grid">
         <div class="container-flex-items anime2">
           <img src="./images/adv.png" alt="Advogado">
@@ -227,6 +231,7 @@
         <form class="form"
           action="https://formspree.io/f/thalycomp@gmail.com"
           method="POST"
+          data-anime="left-right"
         >
           <fieldset>
             <label>Fale Conosco</label>
@@ -237,7 +242,7 @@
             <button class="envi"type="submit">ENVIAR</button>
           </fieldset>
         </form>
-        <div class="container-contato-infos">
+        <div class="container-contato-infos" data-anime="right-left">
           <strong>Nosso horário de funcionamento</strong>
           <p>de Segunda a Sexta de 08:30 às 17:00 e aos sábados de 09:00 às 12:00</p>
 
